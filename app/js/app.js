@@ -1,15 +1,65 @@
 "use strict";
-/* La diferencia es el alcance de las variables. let permite declarar variables limitando su alcance al bloque, declaración, o expresión donde se está usando y var define una variable global o local en una función sin importar el ámbito del bloque. */
-var message = "Hello World!";
-console.log("Scrope 1: " + message);
-if (true) {
-    var message_1 = "Good Bye!";
-    console.log("Scope 2: " + message_1);
+/*=== Tipos de datos en TypeScript
+==============================================================================*/
+console.log("\n");
+st();
+var cadenaTexto = "Vicente Spencer Noriega Moreno";
+console.log("Tipo de dato STRING");
+console.log(cadenaTexto);
+bk();
+st();
+var numero = 123.25;
+console.log("Tipo de dato NUMBER");
+console.log(numero);
+bk();
+st();
+var boleano = true;
+console.log("Tipo de dato BOOLEAN");
+console.log(boleano);
+bk();
+st();
+var fecha = new Date();
+fecha = new Date("2020-10-21");
+console.log("Objeto de tipo DATE");
+console.log(fecha);
+bk();
+st();
+var any;
+console.log("Tipo de dato ANY");
+any = cadenaTexto;
+console.log(any);
+any = numero;
+console.log(any);
+any = boleano;
+console.log(any);
+any = fecha;
+console.log(any);
+bk();
+st();
+var spiderman = {
+    nombre: "Peter Parker",
+    edad: 26
+};
+console.log("Tipo de dato Objeto");
+console.log(spiderman.nombre);
+console.log(spiderman.edad);
+bk();
+/*=== Funciones
+==============================================================================*/
+function bk() {
+    var char = "*", count = 1;
+    while (count <= 50) {
+        char += "*";
+        count++;
+    }
+    console.log(char);
+    console.log("\n");
 }
-/* Uso de constantes en TypeScript */
-var OPCION = "Esto es una constante en TypeScript ...";
-console.log("Scope 3: " + OPCION);
-if (true) {
-    var OPCION_1 = "Esta es la misma constante en otro bloque de TypeScript ...";
-    console.log("Scope 4: " + OPCION_1);
+function st() {
+    var char = "*", count = 1;
+    while (count <= 50) {
+        char += "*";
+        count++;
+    }
+    console.log(char);
 }
