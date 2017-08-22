@@ -1,39 +1,30 @@
-let miFuncion = function( a:any ) { return a; }
-let miFuncionF = ( a:any ) => a;
-
-console.log( miFuncion( "Función normal ..." ) );
-console.log( miFuncionF( "Función con flecha ..." ) );
-console.log( "\n" );
-
-let miFuncion2 = function( a:number, b:number ) { return a + b; }
-let miFuncion2F = ( a:number, b:number ) => a + b;
-
-console.log( "Función normal, suma: " + miFuncion2( 3, 5 ) );
-console.log( "Función flecha, suma: " + miFuncion2F( 3, 5 ) );
-console.log( "\n" );
-
-let miFuncion3 = function( nombre:string ) {
-  nombre = nombre.toUpperCase();
-  return nombre;
-}
-let miFuncion3F = ( nombre:string ) => {
-  nombre = nombre.toUpperCase();
-  return nombre;
-}
-
-console.log( "Función normal, nombre: " + miFuncion3( "Vicente Spencer Noriega Moreno" ) );
-console.log( "Función flecha, nombre: " + miFuncion3F( "Vicente Spencer Noriega Moreno" ) );
-console.log( "\n" );
-/* Objetos en ECMA 6
+/*===DESTRUCTURACIÓN DE LOS OBJETOS
 ==============================================================================*/
-// let nombre = "Pedro";
-let hulk = {
-  nombre: "Bruce",
-  estado: "Furioso",
-  smash() {
-    // setTimeout( function(){ console.log( this.nombre + " smash!!" ); }, 1500 );
-    setTimeout( () => { console.log( this.nombre + " smash!!" ); }, 1500 );
-  }
-}; // fin del objeto hulk
+let avenger = {
+  nombre: "Steve",
+  clave: "Capitan America",
+  poder: "Droga"
+};
 
-hulk.smash();
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
+
+// let { nombre, clave, poder } = avenger;
+// let descripcion = `Descripción: ${ clave }\nNombre: ${ nombre }\nPoder: ${ poder }`;
+
+let { nombre:supername, clave:superheroe, poder:superpower } = avenger;
+let descripcion = `Descripción: ${ superheroe }\nNombre: ${ supername }\nPoder: ${ superpower }`;
+
+console.log( descripcion );
+
+/*===DESTRUCTURACIÓN DE LOS ARREGLOS
+==============================================================================*/
+let avengers:string[] = [ "Bruce Banner", "Steve Rogers", "Tony Stark" ];
+let [ hulk, capitanamerica, ironman  ] = avengers;
+// let [ , , ironman  ] = avengers; // indice del arreglo
+let texto2 =
+`Hulk: ${ hulk }
+Capitan America: ${ capitanamerica }
+Iron Man: ${ ironman }`;
+console.log( texto2 );

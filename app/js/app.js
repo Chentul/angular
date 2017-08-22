@@ -1,35 +1,23 @@
 "use strict";
-var miFuncion = function (a) { return a; };
-var miFuncionF = function (a) { return a; };
-console.log(miFuncion("Función normal ..."));
-console.log(miFuncionF("Función con flecha ..."));
-console.log("\n");
-var miFuncion2 = function (a, b) { return a + b; };
-var miFuncion2F = function (a, b) { return a + b; };
-console.log("Función normal, suma: " + miFuncion2(3, 5));
-console.log("Función flecha, suma: " + miFuncion2F(3, 5));
-console.log("\n");
-var miFuncion3 = function (nombre) {
-    nombre = nombre.toUpperCase();
-    return nombre;
-};
-var miFuncion3F = function (nombre) {
-    nombre = nombre.toUpperCase();
-    return nombre;
-};
-console.log("Función normal, nombre: " + miFuncion3("Vicente Spencer Noriega Moreno"));
-console.log("Función flecha, nombre: " + miFuncion3F("Vicente Spencer Noriega Moreno"));
-console.log("\n");
-/* Objetos en ECMA 6
+/*===DESTRUCTURACIÓN DE LOS OBJETOS
 ==============================================================================*/
-// let nombre = "Pedro";
-var hulk = {
-    nombre: "Bruce",
-    estado: "Furioso",
-    smash: function () {
-        var _this = this;
-        // setTimeout( function(){ console.log( this.nombre + " smash!!" ); }, 1500 );
-        setTimeout(function () { console.log(_this.nombre + " smash!!"); }, 1500);
-    }
-}; // fin del objeto hulk
-hulk.smash();
+var avenger = {
+    nombre: "Steve",
+    clave: "Capitan America",
+    poder: "Droga"
+};
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
+// let { nombre, clave, poder } = avenger;
+// let descripcion = `Descripción: ${ clave }\nNombre: ${ nombre }\nPoder: ${ poder }`;
+var supername = avenger.nombre, superheroe = avenger.clave, superpower = avenger.poder;
+var descripcion = "Descripci\u00F3n: " + superheroe + "\nNombre: " + supername + "\nPoder: " + superpower;
+console.log(descripcion);
+/*===DESTRUCTURACIÓN DE LOS ARREGLOS
+==============================================================================*/
+var avengers = ["Bruce Banner", "Steve Rogers", "Tony Stark"];
+var hulk = avengers[0], capitanamerica = avengers[1], ironman = avengers[2];
+// let [ , , ironman  ] = avengers; // indice del arreglo
+var texto2 = "Hulk: " + hulk + "\nCapitan America: " + capitanamerica + "\nIron Man: " + ironman;
+console.log(texto2);
