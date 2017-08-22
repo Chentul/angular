@@ -1,13 +1,15 @@
 "use strict";
-var nombre = "Vicente Spencer";
-var apellido = "Noriega Moreno";
-function edad() {
-    var edad = 2017 - 1991;
-    return edad;
+function activar(quien, objeto, momento) {
+    if (objeto === void 0) { objeto = "batiseñal"; }
+    var mensaje;
+    if (momento) {
+        mensaje = quien + " activ\u00F3 la " + objeto + " en la " + momento;
+    }
+    else {
+        mensaje = quien + " activ\u00F3 la " + objeto;
+    }
+    console.log(mensaje);
 }
-// let texto = "Hola, " + nombre + " " + apellido + ", (" + edad + " años)";
-// let texto = `Hola, ${ nombre } ${ apellido }, (${ edad } años)`;
-var texto = "Nombre " + nombre + " " + apellido + "\nEdad: " + edad() + " a\u00F1os";
-console.log("***************************************************");
-console.log(texto);
-console.log("***************************************************\n");
+activar("El Guasón");
+activar("Doble Cara", "baticueba");
+activar("James Gordon", "batiseñal", "noche.");
