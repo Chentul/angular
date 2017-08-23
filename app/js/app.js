@@ -1,15 +1,13 @@
 "use strict";
-/* resolve = si la función se resuelve con exito,
-   reject = si la función es rechazada */
-var prom1 = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        console.log("Promesa terminada ...");
-        resolve(); // si la promesa termina con exito
-        // reject(); // si la promesa es rechazada
-    }, 500);
-});
-prom1.then(function () {
-    console.log("Ejecutarme cuando la promesa termine correctamente! =)");
-}, function () {
-    console.error("Ejecutarme cuando la promesa termine rechazada! x(");
-});
+;
+function enviarMision(xmen) {
+    console.log("Enviando a: " + xmen.nombre);
+}
+function enviarCuartel(xmen) {
+    console.log("Enviando a: " + xmen.nombre);
+}
+var wolverine = {
+    nombre: "Wolverine",
+    poder: "Regeneración"
+};
+enviarMision(wolverine);
