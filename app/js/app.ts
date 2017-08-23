@@ -1,12 +1,11 @@
-class Avenger {
-  nombre:string = "Antman";
-  equipo:string;
-  nombreReal:string;
+/*Este ejemplo no funciona correctamente debido a falta de dependencias
+de NodeJS, la cual es SystemJS*/
+import { Xmen, Villanos } from "./clases/index";
+// import { Xmen } from "./clases/xmen.class";
+// import { Villanos } from "./clases/villanos.class";
 
-  puedePelear:boolean;
-  peleasGanadas:number;
-}
+let wolverine = new Xmen( "Logan", "Wolverine" );
+let lex = new Villanos( "Lex Luthor", "Conquistar Small Ville" );
 
-let antman:Avenger = new Avenger();
-
-console.log( antman );
+wolverine.imprimir();
+lex.imprimirPlan();
