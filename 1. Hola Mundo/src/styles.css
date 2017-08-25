@@ -5,3 +5,12 @@
 .align-justify {
   text-align: justify;
 }
+.spacing {
+  clear: both;
+  margin: 35px 0px;
+  display: block;
+  height: 1px;
+}
+.pa0 {
+  padding: 0px;
+}
