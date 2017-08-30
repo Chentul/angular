@@ -1,10 +1,36 @@
 <div class="spacing"></div>
+
 <div class="row">
+
   <div class="col-md-6">
-    <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h1 class="text-center">*ngIf</h1>
+    <hr class="ngHR">
+
+    <button type="button" class="btn btn-outline-primary btn-block"
+        (click)="mostrar = !mostrar">
+      Mostrar/Ocultar
+    </button>
+
+    <div *ngIf="mostrar" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card title</h4>
+        <p class="card-text">{{ frase.mensaje }}</p>
+        <footer>{{ frase.autor }}</footer>
+      </div>
+    </div>
   </div>
+
   <div class="col-md-6">
-    <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h1 class="text-center">*ngFor</h1>
+    <hr class="ngHR">
+    <ul class="list-group">
+      <li *ngFor="let personas of personajes; let i = index" class="list-group-item">
+        {{ i + 1 }}. {{ personas }}
+      </li>
+    </ul>
   </div>
+
 </div>
+
 <div class="spacing"></div>

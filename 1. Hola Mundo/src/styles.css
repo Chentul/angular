@@ -1,16 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-.align-center {
-  text-align: center;
-}
-.align-justify {
-  text-align: justify;
-}
+.align-justify { text-align: justify; }
 .spacing {
   clear: both;
   margin: 35px 0px;
   display: block;
   height: 1px;
 }
-.pa0 {
-  padding: 0px;
+.card, .list-group { margin: auto; }
+.ngHR { border-top: 5px solid silver; }
+.btn {
+  cursor: pointer;
+  margin-bottom: 10px;
 }
