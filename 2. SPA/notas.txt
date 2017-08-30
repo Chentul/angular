@@ -11,6 +11,9 @@ Comando para crear un componente
   ng generate component path/component
   ng g c components/shared/navbar
 
+Comando para crear un componente sin estilos
+  ng g c components/shared/navbar -is
+
 Mismo comando anterior pero mas simplificado
 
 Instalar Bootstrap desde la línea de comandos
