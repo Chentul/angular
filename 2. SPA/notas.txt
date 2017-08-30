@@ -1,0 +1,14 @@
+Documentación de Angular CLI
+  https://github.com/angular/angular-cli
+
+Comando para crear un proyecto nuevo
+  ng new PROJECT-NAME
+
+Comando para compilar y hacer una instancia del proyecto
+  ng serve
+
+Comando para crear un componente
+  ng generate component path/component
+
+Mismo comando anterior pero mas simplificado
+  ng g c components/shared/navbar
