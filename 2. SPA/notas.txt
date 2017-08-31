@@ -10,16 +10,12 @@ Comando para compilar y hacer una instancia del proyecto
 Comando para crear un componente
   ng generate component path/component
   ng g c components/shared/navbar
-
-Comando para crear un componente sin estilos
   ng g c components/shared/navbar -is
-
-Mismo comando anterior pero mas simplificado
 
 Instalar Bootstrap desde la línea de comandos
   npm install bootstrap@4.0.0-beta
   npm install jquery
-  npm install popper
+  npm install popper.js --save
 
 Para incluir bootstrap, jquery y popper a nuestro proyecto, abrimos el archivo .angular-cli.json y agregamos las siguientes líneas de código.
 
