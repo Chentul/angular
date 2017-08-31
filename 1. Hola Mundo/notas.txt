@@ -1,3 +1,5 @@
 para generar un componente
-
 ng g c NombreComponente
+
+para instanciar el servidor
+ng serve --o

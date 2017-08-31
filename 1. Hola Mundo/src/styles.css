@@ -1,16 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-.align-center {
-  text-align: center;
+/*=== 37. Estructura del body component
+======================*/
+.container {
+
 }
-.align-justify {
-  text-align: justify;
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
-.spacing {
-  clear: both;
-  margin: 35px 0px;
-  display: block;
-  height: 1px;
+hr {
+  border-bottom: 2.5px solid #000;
+  padding-bottom: 5px;
 }
-.pa0 {
-  padding: 0px;
+.card {
+  margin: auto;
 }

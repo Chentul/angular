@@ -1,0 +1,12 @@
+
+Comando para compilar un archivo TypeScript:
+  * tsc nombreArchivo.ts
+
+Comando para poner en modo watcher de los cambios de un archivo TypeScript
+  * tsc nombreArchivo.ts -w
+
+Comando para crear un proyecto de TypeScript
+  * tsc -init
+
+Comando para inicializar el watcher de todos los cambios del proyecto
+  * tsc
