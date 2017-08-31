@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">
 
   <div class="col-md-6 col-sm-6">
@@ -10,10 +11,32 @@
         <h4 class="card-title">Dark card title</h4>
         <p class="card-text">{{ frase.mensaje }}</p>
         <footer><cite class="Source Title">{{ frase.autor }}</cite></footer>
+=======
+<div class="spacing"></div>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <h1 class="text-center">*ngIf</h1>
+    <hr class="ngHR">
+
+    <button type="button" class="btn btn-outline-primary btn-block"
+        (click)="mostrar = !mostrar">
+      Mostrar/Ocultar
+    </button>
+
+    <div *ngIf="mostrar" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card title</h4>
+        <p class="card-text">{{ frase.mensaje }}</p>
+        <footer>{{ frase.autor }}</footer>
+>>>>>>> 571cab367c14cd89d607b083db5413dba83d9635
       </div>
     </div>
   </div>
 
+<<<<<<< HEAD
   <div class="col-md-6 col-sm-6">
     <h1 class="text-center ngs">*ngFor</h1>
     <hr>
@@ -24,6 +47,21 @@
       <li class="list-group-item">Morbi leo risus</li>
       <li class="list-group-item">Porta ac consectetur ac</li>
       <li class="list-group-item">Vestibulum at eros</li>
+=======
+  <div class="col-md-6">
+    <h1 class="text-center">*ngFor</h1>
+    <hr class="ngHR">
+    <ul class="list-group">
+      <li *ngFor="let personas of personajes; let i = index" class="list-group-item">
+        {{ i + 1 }}. {{ personas }}
+      </li>
+>>>>>>> 571cab367c14cd89d607b083db5413dba83d9635
     </ul>
   </div>
+
 </div>
+<<<<<<< HEAD
+=======
+
+<div class="spacing"></div>
+>>>>>>> 571cab367c14cd89d607b083db5413dba83d9635

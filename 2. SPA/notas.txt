@@ -1,0 +1,34 @@
+Documentación de Angular CLI
+  https://github.com/angular/angular-cli
+
+Comando para crear un proyecto nuevo
+  ng new PROJECT-NAME
+
+Comando para compilar y hacer una instancia del proyecto
+  ng serve
+
+Comando para crear un componente
+  ng generate component path/component
+  ng g c components/shared/navbar
+
+Comando para crear un componente sin estilos
+  ng g c components/shared/navbar -is
+
+Mismo comando anterior pero mas simplificado
+
+Instalar Bootstrap desde la línea de comandos
+  npm install bootstrap@4.0.0-beta
+  npm install jquery
+  npm install popper
+
+Para incluir bootstrap, jquery y popper a nuestro proyecto, abrimos el archivo .angular-cli.json y agregamos las siguientes líneas de código.
+
+"styles": [
+  "styles.css",
+  "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+"scripts": [
+  "../node_modules/popper.js/umd/popper.js",
+  "../node_modules/jquery/dist/jquery.slim.min.js",
+  "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+],
