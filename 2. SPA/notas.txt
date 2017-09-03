@@ -28,3 +28,9 @@ Para incluir bootstrap, jquery y popper a nuestro proyecto, abrimos el archivo .
   "../node_modules/jquery/dist/jquery.slim.min.js",
   "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 ],
+
+Comando para crear la estructura de las rutas
+ng2-routes
+
+Comando para crear la estructura de los import de los componentes
+ng2-import
