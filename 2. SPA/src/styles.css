@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 50px;
+}
+.pointer {cursor: pointer; }
 .main-container {
   margin-top: 50px;
 }
