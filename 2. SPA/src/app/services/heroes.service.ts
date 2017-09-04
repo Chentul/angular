@@ -60,6 +60,9 @@ export class HeroesService {
   }
 
   public getHeroes():Heroe[] { return this.heroes; /*el this hace referencia a la clase*/ }
+  getHeroe( index: string ) {
+    return this.heroes[ index ];
+  }
 
 }
 

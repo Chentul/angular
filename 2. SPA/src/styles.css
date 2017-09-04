@@ -5,6 +5,7 @@ body {
 .main-container {
   margin-top: 50px;
 }
+.heroeCasa { width: 126px; }
 /* ANIMACIONES */
 .animated {
   -webkit-animation-duration: 1s;
