@@ -11,6 +11,7 @@ body {
   .tsingleheroe {
     margin-top: 20px;
   }
+  .fnheroe { text-align: center; }
 }
 /* ANIMACIONES */
 .animated {

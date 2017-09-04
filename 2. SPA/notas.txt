@@ -1,23 +1,23 @@
-Documentación de Angular CLI
+/* DOCUMENTACIÓN DE ANGULAR CLI */
   https://github.com/angular/angular-cli
 
-Comando para crear un proyecto nuevo
-  ng new PROJECT-NAME
+/* COMANDO PARA CREAR UN PROYECTO NUEVO */
+  * ng new PROJECT-NAME
 
-Comando para compilar y hacer una instancia del proyecto
-  ng serve
+/* COMANDO PARA COMPILAR Y HACER UNA INSTANCIA DEL PROYECTO */
+  * ng serve
 
-Comando para crear un componente
-  ng generate component path/component
-  ng g c components/shared/navbar
-  ng g c components/shared/navbar -is
+/* COMANDO PARA CREAR UN COMPONENTE */
+  * ng generate component path/component
+  * ng g c components/shared/navbar
+  * ng g c components/shared/navbar -is
 
-Instalar Bootstrap desde la línea de comandos
-  npm install bootstrap@4.0.0-beta
-  npm install jquery
-  npm install popper.js --save
+/* INSTALAR BOOTSTRAP DESDE LA LÍNEA DE COMANDOS */
+  * npm install bootstrap@4.0.0-beta
+  * npm install jquery
+  * npm install popper.js --save
 
-Para incluir bootstrap, jquery y popper a nuestro proyecto, abrimos el archivo .angular-cli.json y agregamos las siguientes líneas de código.
+/* PARA INCLUIR BOOTSTRAP, JQUERY Y POPPER A NUESTRO PROYECTO, ABRIMOS EL ARCHIVO .angular-cli.json Y AGREGAMOS LAS SIGUIENTES LÍNEAS DE CÓDIGO. */
 
 "styles": [
   "styles.css",
@@ -29,8 +29,19 @@ Para incluir bootstrap, jquery y popper a nuestro proyecto, abrimos el archivo .
   "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 ],
 
-Comando para crear la estructura de las rutas
-ng2-routes
+/* COMANDO PARA CREAR LA ESTRUCTURA DE LAS RUTAS */
+* ng2-routes
 
-Comando para crear la estructura de los import de los componentes
-ng2-import
+/* COMANDO PARA CREAR LA ESTRUCTURA DE LOS IMPORT DE LOS COMPONENTES */
+  * ng2-import
+
+/* PIPES DISPONIBLES */
+  * currency
+  * date
+  * uppercase
+  * json
+  * limitTo
+  * lowercase
+  * async
+  * decimal
+  * percent
