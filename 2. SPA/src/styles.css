@@ -6,6 +6,12 @@ body {
   margin-top: 50px;
 }
 .heroeCasa { width: 126px; }
+@media ( max-width: 767px ) {
+  .heroeCasa { width: 100%; }
+  .tsingleheroe {
+    margin-top: 20px;
+  }
+}
 /* ANIMACIONES */
 .animated {
   -webkit-animation-duration: 1s;
@@ -24,3 +30,5 @@ body {
   to { opacity: 1; }
 }
 .fadeIn { animation-name: fadeIn; }
+/* ESTILOS GENERALES DE FORMATO */
+.deleteM { margin: 0px; }
