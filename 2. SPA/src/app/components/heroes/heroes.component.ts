@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 /* importamos la interface Heroe para poder visualizar todas las propiedades
 y métodos */
 import { HeroesService, Heroe } from '../../services/heroes.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class HeroesComponent implements OnInit {
 
   /* Al pasar el servicio del _heroesService Angular se encarga de disparar
   el constructor del servicio */
-  constructor( private _heroesService:HeroesService ) {
+  constructor( private _heroesService:HeroesService, private router:Router ) {
 
   }
 
@@ -22,7 +23,11 @@ export class HeroesComponent implements OnInit {
   el constructor se ejecuta mucho antes. */
   ngOnInit() {
     this.heroes = this._heroesService.getHeroes();
-    console.log( this.heroes );
+    // console.log( this.heroes );
+  }
+
+  verHeroe( index:number ) {
+    this.router.navigate( ['/heroe', index ] );
   }
 
 }
