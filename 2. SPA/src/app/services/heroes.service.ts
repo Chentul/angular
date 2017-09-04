@@ -60,9 +60,20 @@ export class HeroesService {
   }
 
   public getHeroes():Heroe[] { return this.heroes; /*el this hace referencia a la clase*/ }
-  getHeroe( index: string ) {
-    return this.heroes[ index ];
-  }
+  public getHeroe( index: string ) { return this.heroes[ index ]; }
+  public buscarHeroes( termino:string ):Heroe[] {
+    let heroesArr:Heroe[] = [];
+    termino = termino.toLowerCase();
+    // barrido de todos nuestros heroes
+    for( let heroe of this.heroes ) {
+      // por cada iteración toma al heroe
+      let nombre = heroe.nombre.toLowerCase();
+      // indexOf busca un string dentro del nombre
+      if( nombre.indexOf( termino ) >= 0 ) { heroesArr.push( heroe ); }
+    } // fin del for
+
+    return heroesArr;
+  } // find e la función buscarHeroes
 
 }
 
