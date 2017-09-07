@@ -1,0 +1,35 @@
+body {
+  padding-bottom: 50px;
+}
+.pointer {cursor: pointer; }
+.main-container {
+  margin-top: 50px;
+}
+.heroeCasa { width: 126px; }
+@media ( max-width: 767px ) {
+  .heroeCasa { width: 100%; }
+  .tsingleheroe {
+    margin-top: 20px;
+  }
+  .fnheroe { text-align: center; }
+}
+/* ANIMACIONES */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fadeIn { animation-name: fadeIn; }
+/* ESTILOS GENERALES DE FORMATO */
+.deleteM { margin: 0px; }
